@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Information</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Explora&family=Pacifico&display=swap");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Necessary */
+
+    body {
+        position: relative;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #2b2b2b;
+        scroll-behavior: smooth;
+        user-select: none;
+    }
+
+    h2 {
+        color: white;
+        padding: 55px 0 20px 300px;
+    }
+
+    .t-left {
+        float: left;
+    }
+
+    .t-right {
+        float: right;
+    }
+
+    .t-clear {
+        clear: both;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Header */
+    header {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    header .navbar {
+        height: 50px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        padding: 0 24px;
+    }
+
+    /* Logo */
+    header .navbar .nav-branding {
+        height: 50px;
+        font-size: 32px;
+        font-family: "Pacifico", cursive;
+        color: white;
+        margin: 0;
+    }
+
+    /* Menu */
+    header .navbar .nav-menu {
+        /* display: flex; */
+        /* justify-content: space-between; */
+        padding: 0;
+        margin: -20px 0 0 0;
+        gap: 60px;
+    }
+
+    header .navbar .nav-menu .nav-item {
+        width: 100%;
+        height: 50px;
+        margin: 20px 0 0 0;
+        display: flex;
+    }
+
+    header .navbar .nav-menu .nav-item a {
+        width: 200px;
+        height: 50px;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .nav-menu .nav-item a:nth-child(4) {
+        margin: 0 1100px 0 0;
+    }
+
+    header .navbar .nav-menu .nav-item .nav-link {
+        width: 100px;
+        transition: 0.7s ease;
+        cursor: pointer;
+    }
+
+    header .navbar .nav-menu .nav-item .nav-link:hover {
+        color: dodgerblue;
+    }
+
+    /* User */
+    header .navbar .nav-menu .nav-item .user {
+        width: 200px;
+        font-size: 16px;
+        display: none;
+        text-align: center;
+        padding: 12px 0 0 0;
+    }
+
+    header .navbar .users-settings {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        height: 200px;
+        background-color: #2b2b2b;
+        border: 2px solid black;
+        margin: 0;
+        padding: 0;
+    }
+
+    header .navbar .users-settings li {
+        list-style: none;
+        color: white;
+        width: 100%;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    header .navbar .users-settings li:hover {
+        background-color: #1d1d1d;
+    }
+
+    /* Header Menu Burger */
+    header .navbar .hamburger {
+        display: none;
+        cursor: pointer;
+    }
+
+    header .navbar .hamburger .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+
+    p {
+        color: white;
+    }
+
+    .acc-box {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .acc-box .acc-info {
+        width: 500px;
+        height: 200px;
+        background-color: #1d1d1d;
+
+    }
+
+    .acc-box .acc-info-box h2 {
+        /* background-color: #1d1d1d; */
+        padding: 10px 0 10px 0;
+        text-align: center;
+        /* border: 1px solid red; */
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+
+    .acc-box .acc-info-box .acc-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .acc-box .acc-info-box .acc-info p {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    .acc-box .acc-info-box .acc-info .change-password:hover {
+        cursor: pointer;
+        color: yellow;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <p href="#" class="nav-branding">PlutoTV.</p>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="Home.html" class="nav-link">Home</a>
+                    <a href="#movies" class="nav-link">Movies</a>
+                    <a href="#series" class="nav-link">Series</a>
+                    <a href="#anime" class="nav-link">Anime</a>
+                    <a id="log-in" href="./Login-Page.html" class="nav-link">Log in</a>
+                    <a id="sign-up" href="./Register-Page.html" class="nav-link">Sign up</a>
+                    <!-- <a id="log-in" class="nav-link">Log in</a>
+                    <a id="sign-up" class="nav-link">Sign up</a> -->
+                    <a id="user" class="nav-link user">User</a>
+                </li>
+            </ul>
+            <ul id="users-settings" class="users-settings hidden">
+                <li id="acc-info">Account Information</li>
+                <li id="settings">Settings</li>
+                <li id="add-movies">Add Movies</li>
+                <li id="log-out"> Log out</li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="acc-box">
+        <div class="acc-info-box">
+            <h2>My Account</h2>
+            <div class="acc-info">
+                <p>ID: <span id="id-value">1</span></p>
+                <p>Email: <span id="email-value">Tugu</span></p>
+                <p id="change-password" class="change-password">Change Password</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    "use sctrict";
+
+    const menuHamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    const homeLogin = document.querySelector("#log-in");
+    const homeSignup = document.querySelector("#sign-up");
+    const homeUser = document.querySelector("#user");
+    const userSettings = document.querySelector("#users-settings");
+    // ------------------------------------------------------------------
+    // Eventlisteners
+    // Users Name
+    window.addEventListener("load", function () {
+        const formArray = JSON.parse(localStorage.getItem("Form"));
+        formArray.forEach((e) => {
+            homeUser.textContent = e.userName;
+            // homeUser.classList.remove("hidden");
+            // homeLogin.classList.add("hidden");
+            homeLogin.style.display = "none";
+            homeSignup.style.display = "none";
+            homeUser.style.display = "block";
+
+            // console.log(formUsername);
+        });
+    });
+    homeUser.addEventListener("click", function () {
+        // userSettings.style.display = "none";
+        userSettings.classList.toggle("hidden");
+    });
+    // ------------------------------------------------------------------
+    // Menu Burger
+    menuHamburger.addEventListener("click", () => {
+        menuHamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+    document.querySelectorAll(".nav-link").forEach((e) =>
+        e.addEventListener("click", () => {
+            menuHamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        })
+    );
+    // ------------------------------------------------------------------
+    homeLogin.addEventListener("click", function () {
+        location.href = "Login-Page.html";
+    });
+    homeSignup.addEventListener("click", function () {
+        location.href = "Register-Page.html";
+    });
+
+// ------------------------------------------------------------------
+
+// ------------------------------------------------------------------
+
+</script>
+
+</html>

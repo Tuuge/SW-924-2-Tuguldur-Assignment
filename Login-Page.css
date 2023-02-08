@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Explora&family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(/img/3a4b66_d955b5e2bf28411b884acdf91b1b95f1f000.webp);
+  background-size: 1920px;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  object-fit: cover;
+}
+
+.t-right {
+  float: right;
+}
+
+.t-left {
+  float: left;
+}
+
+.t-clear {
+  clear: both;
+}
+/* img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+} */
+
+/* Header */
+header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.h-container {
+  height: 60px;
+  width: 100%;
+  background-color: #000000;
+}
+
+.h-container .logo {
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.h-container .logo p {
+  font-family: "Pacifico", cursive;
+  font-size: 2.1rem;
+}
+
+/* Body */
+.t-register {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  margin-top: 60px;
+}
+
+.t-register .register-box {
+  background-color: black;
+  width: 500px;
+  height: 600px;
+  border-radius: 20px;
+  box-shadow: -1px -1px 20px 1px;
+  border: none;
+}
+
+.t-register .register-box h1 {
+  font-weight: 300;
+  width: 180px;
+  margin: 50px 160px 0 160px;
+  display: inline-block;
+}
+
+.t-register .register-box h4 {
+  font-weight: 300;
+  padding: 30px 0 0 60px;
+}
+
+.t-register .register-box .email input {
+  width: 360px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px 60px 0 60px;
+  border-radius: 10px;
+  border: none;
+}
+
+.t-register .register-box .password input {
+  width: 360px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px 60px 0 60px;
+  border-radius: 10px;
+  border: none;
+}
+
+.t-register .register-box .checkbox input {
+  border-radius: 50px;
+  display: inline-block;
+  margin: 30px 0 0 60px;
+}
+
+.t-register .register-box .checkbox p {
+  display: inline-block;
+}
+
+.t-register .register-box button {
+  width: 300px;
+  height: 50px;
+  /* padding: 20px; */
+  margin: 20px 100px 0 100px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2b2b2b;
+  color: white;
+  box-shadow: -0.5px -0.5px 5px 0.5px;
+}
+
+.t-register .register-box button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: -0.5px -0.5px 5px 0.5px white;
+}
+
+.t-register .register-box button p {
+  font-size: 20px;
+}
+
+.t-register .register-box .forgot {
+  margin: 20px 0 0 300px;
+}
+
+.t-register .register-box .forgot a {
+  color: white;
+  text-decoration: none;
+}
+
+.t-register .register-box .google {
+  margin: 20px 0px 0 20px;
+  padding: 10px;
+}
+
+.t-register .register-box .facebook {
+  margin: 20px 0px 0 0px;
+  padding: 10px;
+}
+
+.t-register .register-box .instagram {
+  margin: 20px 20px 0 0px;
+  padding: 10px;
+}
+
+.t-register .register-box .google,
+.facebook,
+.instagram {
+  background-color: white;
+  color: black;
+  display: inline-block;
+  width: 130px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.t-register .register-box .google,
+.facebook,
+.instagram:hover {
+  cursor: pointer;
+}
+
+.t-register .register-box .google,
+.facebook,
+.instagram p {
+  display: inline-block;
+}
+
+.t-register .register-box .register {
+  margin: 20px 143.06px 0 143.06px;
+  display: inline-block;
+}
+
+.t-register .register-box .register p {
+  display: inline-block;
+}
+
+.t-register .register-box .register span {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 159px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* padding: 69px 0 0 0; */
+}
+.t-footer {
+  width: 100%;
+  height: 50px;
+  background-color: #000000;
+}
+
+.t-footer .t-footer-left {
+  margin: 10px 0 10px 380px;
+}
+
+.t-footer .t-footer-left a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.t-footer .t-footer-left a li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+footer .t-footer .t-footer-left ul li:hover {
+  color: yellow;
+}
+
+footer .t-footer .t-footer-right ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 15px 20px 0 0;
+}
+
+footer .t-footer .t-footer-right ul li:nth-child(3) {
+  margin-right: 380px;
+}
+
+footer .t-footer .t-footer-right ul li a {
+  color: white;
+}
+
+footer .t-footer .t-footer-right ul li a:hover {
+  color: yellow;
+}
+/* --------------------------------------------------------------- */
+
+.hidden {
+  display: none;
+}
+/* --------------------------------------------------------------- */
+/* Incorrect Message */
+
+.incorrect-valid {
+  width: 500px;
+  padding: 70px 0 0 0;
+  animation-name: errormsg;
+  animation-duration: 1s;
+  animation-delay: 0;
+}
+.incorrect-valid .error-msg {
+  width: 90%;
+  height: 100px;
+  background-color: #cd0000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes errormsg {
+  0% {
+    opacity: 0;
+    top: 0;
+    left: 700px;
+  }
+  100% {
+    top: 100px;
+    left: 700px;
+  }
+}
+/* .incorrect-valid .error-msg p {
+  font-size: 20px;
+}
+.incorrect-valid .icon {
+  width: 9%;
+}
+.incorrect-valid .icon .bar {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+}
+.incorrect-valid .icon .bar:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.incorrect-valid .icon .bar:nth-child(2) {
+  transform: translateY(8px) rotate(-45deg);
+} */
+
+/* --------------------------------------------------------------- */

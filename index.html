@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Home.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Swiper2JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <title>PlutoTV</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="home">
+        <nav class="navbar">
+            <p href="#" class="nav-branding">PlutoTV.</p>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#movies" class="nav-link">Movies</a>
+                    <a href="#series" class="nav-link">Series</a>
+                    <a href="#anime" class="nav-link">Anime</a>
+                    <!-- <a id="log-in" href="./Login-Page.html" class="nav-link">Log in</a> -->
+                    <!-- <a id="sign-up" href="./Register-Page.html" class="nav-link">Sign up</a> -->
+                    <a id="log-in" class="nav-link">Log in</a>
+                    <a id="sign-up" class="nav-link">Sign up</a>
+                    <a id="user" class="nav-link user">User</a>
+                </li>
+            </ul>
+            <ul id="users-settings" class="users-settings hidden">
+                <li id="acc-info">Account Information</li>
+                <li id="acc-log-out"> Log out</li>
+            </ul>
+            <!-- <ul class="nav-menu">
+                <li class="nav-item-left">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Series</a>
+                    <a href="#" class="nav-link">Movies</a>
+                    <a href="#" class="nav-link">Anime</a>
+                </li>
+                <li class="nav-item-right">
+                    <a href="#" class="nav-link">Log in</a>
+                    <a href="#" class="nav-link">Sign up</a>
+                    <a class="nav-link user">User</a>
+                </li>
+            </ul> -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- -------------------------------------------------------- -->
+    <!-- Body - Video -->
+    <video class="video" id="video" loop autoplay preload="none" muted>
+        <source src="./Videos/Marvel.mp4" type="Video/mp4">
+    </video>
+    <!-- -------------------------------------------------------- -->
+    <!-- Swiper -->
+    <div id="movies" class="swiper mySwiper">
+        <h2>Movies</h2>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="https://fmovies.to/movie/captain-marvel-v56r7/1-full">
+                    <img src="/img/movie poster/movie-poster-1.jpeg">
+                    <p>Captain Marvel</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="./Movie.html">
+                    <img src="/img/movie poster/movie-poster-2.jpg">
+                    <p>Avenger: Endgame</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://fmovies.to/movie/spider-man-far-from-home-lrpv3/1-full">
+                    <img src="/img/movie poster/movie-poster-3.jpg">
+                    <p>Spider-Man: Far From Home</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://fmovies.to/movie/spectre-rq2n/1-full">
+                    <img src="/img/movie poster/movie-poster-4.jpg">
+                    <p>Spectre</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://fmovies.to/movie/black-widow-9jl3q/1-full">
+                    <img src="/img/movie poster/movie-poster-5.jpeg">
+                    <p>Black Widow</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://fmovies.to/movie/venom-v5z07/1-full">
+                    <img src="/img/movie poster/movie-poster-6.webp">
+                    <p>Venom</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://fmovies.to/movie/venom-v5z07/1-full">
+                    <img src="/img/movie poster/movie-poster-6.webp">
+                    <p>Venom</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://fmovies.to/movie/venom-v5z07/1-full">
+                    <img src="/img/movie poster/movie-poster-6.webp">
+                    <p>Venom</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://fmovies.to/movie/venom-v5z07/1-full">
+                    <img src="/img/movie poster/movie-poster-6.webp">
+                    <p>Venom</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://fmovies.to/movie/venom-v5z07/1-full">
+                    <img src="/img/movie poster/movie-poster-6.webp">
+                    <p>Venom</p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- -------------------------------------------------------- -->
+    <!-- Series Swiper -->
+    <div id="series" class="swiper mySwiper">
+        <h2>Series</h2>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="https://fmoviesto.site/the-witcher-season-1">
+                    <img src="/img/seriesposter/series-poster-1.webp" alt="">
+                    <p>The Witcher</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://fmoviesto.site/altered-carbon-season-1">
+                    <img src="/img/seriesposter/series-poster-2.jpg" alt="">
+                    <p>The Altered Carbon</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://fmoviesto.site/travelers-season-1">
+                    <img src="/img/seriesposter/series-poster-3.jpg">
+                    <p>The Travelers</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://fmoviesto.site/the-wheel-of-time-season-1">
+                    <img src="/img/seriesposter/series-poster-5.webp">
+                    <p>Wheel of Time</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://fmoviesto.site/money-heist-season-1">
+                    <img src="/img/seriesposter/series-poster-4.jpg">
+                    <p>La Casa De Papel</p>
+                </a>
+            </div>
+            <div class="swiper-slide"><a href="https://fmoviesto.site/see-season-1">
+                    <img src="/img/seriesposter/series-poster-6.jpg ">
+                    <p>See</p>
+                </a>
+            </div>
+            <div class="swiper-slide"><a href="https://fmoviesto.site/see-season-1">
+                    <img src="/img/seriesposter/series-poster-6.jpg ">
+                    <p>See</p>
+                </a>
+            </div>
+            <div class="swiper-slide"><a href="https://fmoviesto.site/see-season-1">
+                    <img src="/img/seriesposter/series-poster-6.jpg ">
+                    <p>See</p>
+                </a>
+            </div>
+            <div class="swiper-slide"><a href="https://fmoviesto.site/see-season-1">
+                    <img src="/img/seriesposter/series-poster-6.jpg ">
+                    <p>See</p>
+                </a>
+            </div>
+            <div class="swiper-slide"><a href="https://fmoviesto.site/see-season-1">
+                    <img src="/img/seriesposter/series-poster-6.jpg ">
+                    <p>See</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------- -->
+    <!-- Anime Swiper -->
+    <div id="anime" class="swiper mySwiper">
+        <h2>Anime</h2>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="https://animixplay.to/v1/jujutsu-kaisen-tv">
+                    <img src="/img/anime poster/anime-poster-1.jpg">
+                    <p>Jujutsu Kaisen</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://animixplay.to/v1/kimetsu-no-yaiba">
+                    <img src="/img/anime poster/anime-poster-2.jpg">
+                    <p>Kimetsu no yaiba</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://animixplay.to/v1/deathnote">
+                    <img src="/img/anime poster/anime-poster-3.webp">
+                    <p>Deathnote</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://animixplay.to/v1/one-punch-man">
+                    <img src="/img/anime poster/anime-poster-4.jpg">
+                    <p>One Punch Man</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://animixplay.to/v1/black-clover-tv">
+                    <img src="/img/anime poster/anime-poster-5.webp">
+                    <p>Black Clover</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://animixplay.to/v1/kuroko-no-baske">
+                    <img src="/img/anime poster/anime-poster-6.webp">
+                    <p>Kuroko no basuke</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://animixplay.to/v1/kuroko-no-baske">
+                    <img src="/img/anime poster/anime-poster-6.webp">
+                    <p>Kuroko no basuke</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://animixplay.to/v1/kuroko-no-baske">
+                    <img src="/img/anime poster/anime-poster-6.webp">
+                    <p>Kuroko no basuke</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://animixplay.to/v1/kuroko-no-baske">
+                    <img src="/img/anime poster/anime-poster-6.webp">
+                    <p>Kuroko no basuke</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://animixplay.to/v1/kuroko-no-baske">
+                    <img src="/img/anime poster/anime-poster-6.webp">
+                    <p>Kuroko no basuke</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------- -->
+    <!-- Recently Added -->
+    <div id="recently-added" class="t-body-container-recently-added">
+        <h2>Recently Added</h2>
+        <div class="container">
+            <a href="https://fmovies.to/movie/interstellar-kwj4/1-full">
+                <img src="/img/recently added/movie-poster-1.jpg">
+                <p>Interstellar</p>
+            </a>
+            <a href="https://fmovies.to/movie/inception-zlzm/1-full">
+                <img src="/img/recently added/movie-poster-2.jpg">
+                <p>Inception</p>
+            </a>
+            <a href="https://fmovies.to/movie/moonfall-20xql/1-full">
+                <img src="/img/recently added/movie-poster-3.jpg">
+                <p>MoonFall</p>
+            </a>
+            <a href="https://fmovies.to/movie/deadpool-y5mp/1-full">
+                <img src="/img/recently added/movie-poster-4.jpg">
+                <p>Deadpool</p>
+            </a>
+            <a href="https://fmovies.to/movie/justice-league-37xlr/1-fullhd">
+                <img src="/img/recently added/movie-poster-5.jpg">
+                <p>Justcice League </p>
+            </a>
+            <a href="https://fmovies.to/movie/the-batman-j2lx4/1-full">
+                <img src="/img/recently added/movie-poster-6.jpg">
+                <p>The Batman</p>
+            </a>
+            <a href="https://fmovies.to/movie/thor-42xo/1-full">
+                <img src="/img/recently added/movie-poster-7.jpg">
+                <p>Thor</p>
+            </a>
+            <a href="https://fmovies.to/movie/joker-8x2no/1-full">
+                <img src="/img/recently added/movie-poster-8.jpg">
+                <p>Joker</p>
+            </a>
+            <a href="https://fmovies.to/movie/the-wolverine-7jm7/1-full">
+                <img src="/img/recently added/movie-poster-9.jpg">
+                <p>Wolverine</p>
+            </a>
+            <a href="">
+                <img src="/img/recently added/movie-poster-10.webp">
+                <p>Black Adam</p>
+            </a>
+            <a href="https://fmovies.to/movie/johnny-english-strikes-again-pjzwx/1-full">
+                <img src="/img/recently added/movie-poster-11.jpg">
+                <p>Johny English</p>
+            </a>
+            <a href="https://fmovies.to/movie/avengers-age-of-ultron-v4l4/1-full">
+                <img src="/img/recently added/movie-poster-12.jpg">
+                <p>Avengers: Age of Ultron</p>
+            </a>
+            <a href="https://fmovies.to/movie/jumanji-welcome-to-the-jungle-rj9qq/1-full">
+                <img src="/img/recently added/movie-poster-13.jpg">
+                <p>Jumanji: Welcome to the Jungle</p>
+            </a>
+            <a href="https://fmovies.to/movie/the-hitmans-wifes-bodyguard-3pwzy/1-full">
+                <img src="/img/recently added/movie-poster-14.jpg">
+                <p>The Hitman's Wife's Bodyguard</p>
+            </a>
+            <a href="https://fmovies.to/movie/shang-chi-and-the-legend-of-the-ten-rings-0mrp7/1-full">
+                <img src="/img/recently added/movie-poster-15.jpg">
+                <p>Shang-Chi</p>
+            </a>
+            <a href="https://fmovies.to/movie/eternals-5wwrq/1-full">
+                <img src="/img/recently added/movie-poster-16.jpg">
+                <p>Eternals</p>
+            </a>
+            <a href="https://fmovies.to/movie/doctor-strange-in-the-multiverse-of-madness-20qjl/1-full">
+                <img src="/img/recently added/movie-poster-17.jpg">
+                <p>Doctor Strange: Multiverse of <br> Madness</p>
+            </a>
+            <a href="https://fmovies.to/movie/iron-man-3rw89/1-full">
+                <img src="/img/recently added/movie-poster-18.jpg">
+                <p>Iron Man</p>
+            </a>
+            <a href="https://fmovies.to/movie/jungle-cruise-30rp2/1-full">
+                <img src="/img/recently added/movie-poster-19.jpg">
+                <p>Jungle Cruise</p>
+            </a>
+            <a href="https://fmovies.to/series/agents-of-shield-1qwlp/1-1">
+                <img src="/img/recently added/movie-poster-20.jpg">
+                <p>Agents of S.H.I.E.L.D</p>
+            </a>
+            <a href="https://fmovies.to/series/dahmer-monster-the-jeffrey-dahmer-story-vq0ll/1-1">
+                <img src="/img/recently added/movie-poster-21.jpg">
+                <p>DAHMER</p>
+            </a>
+            <a href="https://fmovies.to/series/game-of-thrones-92p7q/1-1">
+                <img src="/img/recently added/movie-poster-22.webp">
+                <p>Game of Thrones</p>
+            </a>
+            <a href="https://fmovies.to/movie/day-shift-0m3jr/1-full">
+                <img src="/img/recently added/movie-poster-23.jpg">
+                <p>Day Shift</p>
+            </a>
+            <a href="https://fmovies.to/movie/thor-love-and-thunder-vqjnv/1-full">
+                <img src="/img/recently added/movie-poster-24.jpg">
+                <p>Thor: Love and Thunder</p>
+            </a>
+            <a href="https://fmovies.to/movie/thor-ragnarok-qk7w5/1-full">
+                <img src="/img/recently added/movie-poster-25.jpg">
+                <p>Thor: Ragnarok</p>
+            </a>
+            <a href="https://fmovies.to/movie/prey-3036r/1-full">
+                <img src="/img/recently added/movie-poster-26.webp">
+                <p>Prey</p>
+            </a>
+            <a href="https://fmovies.to/movie/top-gun-maverick-wqnjo/1-full">
+                <img src="/img/recently added/movie-poster-27.jpg">
+                <p>Topgun: Maverick</p>
+            </a>
+            <a href="https://fmovies.to/movie/hustle-zk253/1-full">
+                <img src="/img/recently added/movie-poster-28.jpg">
+                <p>Hustle</p>
+            </a>
+            <a href="https://fmovies.to/movie/morbius-olvky/1-full">
+                <img src="/img/recently added/movie-poster-29.jpg">
+                <p>Morbius</p>
+            </a>
+            <a href="https://fmovies.to/movie/fantastic-beasts-the-secrets-of-dumbledore-20v1q/1-full">
+                <img src="/img/recently added/movie-poster-30.jpg">
+                <p>Fantastic Beats: Secrets of Dumbledore</p>
+            </a>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------ -->
+    <!-- Footer -->
+    <footer>
+        <div class="t-footer">
+            <div class="t-footer-left t-left">
+                <p class="copy-right">&copy; 2023 PlutoTV All rights reserved.</p>
+                <ul>
+                    <a href="https://www.viacomcbsprivacy.com/en/policy?r=www.eu-landing.corp.pluto.tv">
+                        <li>Privacy Policy</li>
+                    </a>
+                    <a href="/Legal-Notice.html">
+                        <li>Legal Notice</li>
+                    </a>
+                    <a href="/Contact.html">
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="https://www.viacomcbsprivacy.com/en/cookies?r=www.eu-landing.corp.pluto.tv">
+                        <li>Cookie Policy</li>
+                    </a>
+                    <a href="/About-Us.html">
+                        <li>About Us</li>
+                    </a>
+                    <a href="/Jobs.html">
+                        <li>Jobs</li>
+                    </a>
+                    <a href="https://www.viacomcbsprivacy.com/en/donotsell?r=www.eu-landing.corp.pluto.tv">
+                        <li>Do not sell my data</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="t-footer-right t-right">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/plutotv/">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/PlutoTV">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/PlutoTV">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="t-clear"> </div>
+
+        </div>
+    </footer>
+    <!-- ------------------------------------------------------------ -->
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="Home.js"></script>
+
+</body>
+
+</html>
